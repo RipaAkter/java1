@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		var unit=550;
+		document.write('total units:'+unit+'<br>');
+		var cond1=0.50;
+		var cond2=0.75;
+		var cond3=1.20;
+		var cond4=1.50;
+
+		if(unit>=0 && unit<=50)
+		{
+			document.write('Total unit charge:'+ cond1 * unit +'taka');
+		}
+		if(unit>=51 && unit<=150)
+		{
+			document.write('Total unit charge:'+ cond2 * unit +'taka');
+		}
+		if(unit>=151 && unit<=250)
+		{
+			document.write('Total unit charge:'+ cond3 * unit +'taka');
+		}
+		if( unit>=250)
+		{
+			document.write('Total unit charge:'+ cond4 * unit +'taka <br>');
+		}
+		document.write('surcharge 20%:'+(( cond4 * unit )*20/100)+'taka <br>');
+		document.write('total bill amout:'+(( cond4 * unit)+((cond4 * unit)*20/100))+'taka');
+
+	</script>
+
+</body>
+</html>
